@@ -1,11 +1,13 @@
-function App() {
+import Navbar from "./components/Navbar.jsx";
+import ParticlesBG from "./components/ParticlesBG.jsx";
+
+const App = () => {
   return (
     <>
-      <h1 className="text-purple-700 p-5 text-center text-2xl">
-        Portfolio Website
-      </h1>
+      <ParticlesBG />
+      <Navbar />
     </>
   );
-}
+};
 
 export default App;
