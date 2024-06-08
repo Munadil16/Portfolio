@@ -1,4 +1,6 @@
 import Navbar from "./components/Navbar.jsx";
+import Home from "./components/Home.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 import ParticlesBG from "./components/ParticlesBG.jsx";
 
 const App = () => {
@@ -6,6 +8,8 @@ const App = () => {
     <>
       <ParticlesBG />
       <Navbar />
+      <Home />
+      <AboutMe />
     </>
   );
 };

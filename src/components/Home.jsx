@@ -1,0 +1,27 @@
+import TypewriterText from "./TypewriterText";
+import codingIllustration from "../assets/images/Coding.png";
+
+const Home = () => {
+  return (
+    <div
+      id="Home"
+      className="flex flex-col sm:flex-row items-center justify-center sm:gap-4 h-dvh"
+    >
+      <div className="w-11/12 sm:w-2/5 lg:w-1/2 h-2/5 text-center sm:text-left">
+        <p className="text-white text-[2.5rem] font-lg mb-6">
+          Hi there! I'm{" "}
+          <span className="font-semibold bg-gradient-to-r from-[#cf00cc] from-30% to-[#b200f8] to-100% text-transparent bg-clip-text">
+            Munadil.
+          </span>
+        </p>
+        <TypewriterText />
+      </div>
+
+      <div className="w-[70%] sm:w-80 lg:w-[450px]">
+        <img src={codingIllustration} alt="Coding Illustration" />
+      </div>
+    </div>
+  );
+};
+
+export default Home;
