@@ -4,7 +4,7 @@ const AboutMe = () => {
   const highlightClasses = "text-[#DF00FF] font-medium text-xl lg:text-2xl";
 
   return (
-    <div id="AboutMe" className="h-[88dvh]">
+    <div id="AboutMe" className="h-dvh pt-[12dvh] sm:mb-24 lg:mb-0">
       <h2 className="text-[2rem] text-center">
         <mark className="text-white bg-[#a300cc] inline-block leading-[0em] pb-[0.5em]">
           About me
