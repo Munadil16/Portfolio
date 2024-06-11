@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 import {
   FaHtml5,
   FaCss3,
@@ -15,12 +19,24 @@ import {
   SiVercel,
   SiPostman,
 } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      entry?.target.classList.add("show");
+    } else {
+      entry?.target.classList.remove("show");
+    }
+  }, [inView]);
+
   return (
-    <div id="Skills" className="h-dvh pt-[12dvh]">
+    <div
+      id="Skills"
+      className="h-dvh pt-[12dvh] opacity-0 -translate-x-[20vw]"
+      ref={ref}
+    >
       <h2 className="text-[2rem] text-center h-[10dvh]">
         <mark className="text-white bg-[#a300cc] inline-block leading-[0em] pb-[0.5em]">
           Skills

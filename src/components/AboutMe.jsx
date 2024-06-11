@@ -1,10 +1,26 @@
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import aboutMeIllustration from "../assets/images/AboutMe.png";
 
 const AboutMe = () => {
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      entry?.target.classList.add("show");
+    } else {
+      entry?.target.classList.remove("show");
+    }
+  }, [inView]);
+
   const highlightClasses = "text-[#DF00FF] font-medium text-xl lg:text-2xl";
 
   return (
-    <div id="AboutMe" className="h-dvh pt-[12dvh] sm:mb-24 lg:mb-0">
+    <div
+      id="AboutMe"
+      className="h-dvh pt-[12dvh] sm:mb-24 lg:mb-0 opacity-0 -translate-x-[20vw]"
+      ref={ref}
+    >
       <h2 className="text-[2rem] text-center">
         <mark className="text-white bg-[#a300cc] inline-block leading-[0em] pb-[0.5em]">
           About me

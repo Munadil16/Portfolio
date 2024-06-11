@@ -7,3 +7,11 @@
     font-family: "Inter", system-ui, sans-serif;
   }
 }
+
+@layer utilities {
+  .show {
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
