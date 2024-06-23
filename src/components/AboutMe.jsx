@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import aboutMeIllustration from "../assets/images/AboutMe.png";
+import aboutMeIllustration from "../assets/images/AboutMe.webp";
 
 const AboutMe = () => {
-  const { ref, inView, entry } = useInView();
+  const { ref, inView, entry } = useInView({
+    threshold: 0.3,
+  });
 
   useEffect(() => {
     if (inView) {
@@ -18,7 +20,7 @@ const AboutMe = () => {
   return (
     <div
       id="AboutMe"
-      className="h-dvh pt-[12dvh] sm:mb-24 lg:mb-0 opacity-0 -translate-x-[20vw]"
+      className="h-fit lg:h-[78dvh] scroll-mt-[12dvh] mb-[5dvh] lg:mb-0 opacity-0 -translate-x-[20dvw]"
       ref={ref}
     >
       <h2 className="text-[2rem] text-center">
@@ -27,13 +29,13 @@ const AboutMe = () => {
         </mark>
       </h2>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-16">
-        <div className="w-[70%] sm:w-96 lg:w-[425px]">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-16">
+        <div className="w-[70%] sm:w-[425px]">
           <img src={aboutMeIllustration} alt="About Me Illustration" />
         </div>
 
-        <div className="text-white w-5/6 sm:w-2/5 lg:w-1/2 leading-7 sm:tracking-wider">
-          <p className="text-[1.1rem] lg:text-[1.2rem] mb-8 indent-16">
+        <div className="text-white w-5/6 lg:w-1/2 leading-7 sm:tracking-wider">
+          <p className="text-[1.1rem] sm:text-[1.2rem] mb-8 indent-16">
             Hello <span className={highlightClasses}>W</span>
             orld! I'm <span className={highlightClasses}>Munadil</span> from
             Madurai, Tamil Nadu, India. I graduated with a B.Sc. in Computer

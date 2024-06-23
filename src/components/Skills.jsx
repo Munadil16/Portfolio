@@ -10,7 +10,6 @@ import {
   FaNode,
   FaGitAlt,
   FaGithub,
-  FaWindows,
 } from "react-icons/fa";
 import {
   SiPostgresql,
@@ -21,7 +20,9 @@ import {
 } from "react-icons/si";
 
 const Skills = () => {
-  const { ref, inView, entry } = useInView();
+  const { ref, inView, entry } = useInView({
+    threshold: 0.3,
+  });
 
   useEffect(() => {
     if (inView) {
@@ -34,18 +35,18 @@ const Skills = () => {
   return (
     <div
       id="Skills"
-      className="h-dvh pt-[12dvh] opacity-0 -translate-x-[20vw]"
+      className="h-fit lg:h-[78dvh] scroll-mt-[12dvh] mb-[5dvh] opacity-0 -translate-x-[20dvw]"
       ref={ref}
     >
-      <h2 className="text-[2rem] text-center h-[10dvh]">
+      <h2 className="text-[2rem] text-center">
         <mark className="text-white bg-[#a300cc] inline-block leading-[0em] pb-[0.5em]">
           Skills
         </mark>
       </h2>
 
-      <div className="flex flex-col items-center gap-5 mt-2 text-white text-6xl">
+      <div className="flex flex-col items-center gap-5 mt-6 text-white text-5xl md:text-6xl">
         {/* Webdev Skills */}
-        <div className="flex gap-x-10 gap-y-0 sm:gap-20 flex-wrap items-center justify-center w-[92dvw] h-[23dvh] sm:h-[30dvh] bg-[#121212] rounded-3xl p-2">
+        <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] h-[22dvh] md:h-[30dvh] p-3 rounded-3xl bg-[#121212]">
           <FaHtml5 />
           <FaCss3 />
           <FaJs />
@@ -58,15 +59,14 @@ const Skills = () => {
 
         <div className="flex flex-col sm:flex-row gap-5">
           {/* Tools */}
-          <div className="flex gap-x-10 gap-y-0 sm:gap-16 flex-wrap items-center justify-center w-[92dvw] sm:w-[44.25dvw] h-[23dvh] sm:h-[30dvh] bg-[#121212] rounded-3xl p-2">
-            <FaWindows />
+          <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[30dvh] p-3 rounded-3xl bg-[#121212]">
             <VscVscode />
             <FaGithub />
             <SiPostman />
             <SiVercel />
           </div>
           {/* Database */}
-          <div className="flex gap-x-10 sm:gap-20 items-center justify-center w-[92dvw] sm:w-[44.25dvw] h-[23dvh] sm:h-[30dvh] bg-[#121212] rounded-3xl p-2">
+          <div className="flex items-center justify-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[30dvh] p-3 rounded-3xl bg-[#121212]">
             <SiPostgresql />
             <SiMongodb />
           </div>
