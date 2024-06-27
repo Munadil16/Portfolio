@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
   <h1>Personal portfolio</h1>
   <h2><a href="https://munadil.vercel.app" target="_blank">Live Preview</a></h2>
   <img src="./public/portfolio.png" alt="Website Preview" />

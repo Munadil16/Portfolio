@@ -46,7 +46,7 @@ const Skills = () => {
 
       <div className="flex flex-col items-center gap-5 mt-6 text-white text-5xl md:text-6xl">
         {/* Webdev Skills */}
-        <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] h-[22dvh] md:h-[30dvh] p-3 rounded-3xl bg-[#121212]">
+        <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] h-[22dvh] md:h-[32dvh] p-3 rounded-3xl bg-[#121212]">
           <FaHtml5 />
           <FaCss3 />
           <FaJs />
@@ -57,16 +57,16 @@ const Skills = () => {
           <FaGitAlt />
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           {/* Tools */}
-          <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[30dvh] p-3 rounded-3xl bg-[#121212]">
+          <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[32dvh] p-3 rounded-3xl bg-[#121212]">
             <VscVscode />
             <FaGithub />
             <SiPostman />
             <SiVercel />
           </div>
           {/* Database */}
-          <div className="flex items-center justify-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[30dvh] p-3 rounded-3xl bg-[#121212]">
+          <div className="flex items-center justify-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[32dvh] p-3 rounded-3xl bg-[#121212]">
             <SiPostgresql />
             <SiMongodb />
           </div>
