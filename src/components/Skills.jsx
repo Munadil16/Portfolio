@@ -35,7 +35,7 @@ const Skills = () => {
   return (
     <div
       id="Skills"
-      className="h-fit lg:h-[78dvh] scroll-mt-[12dvh] mb-[5dvh] opacity-0 -translate-x-[20dvw]"
+      className="h-fit scroll-mt-[12dvh] mb-[5dvh] opacity-0 -translate-x-[20dvw]"
       ref={ref}
     >
       <h2 className="text-[2rem] text-center">
@@ -46,29 +46,43 @@ const Skills = () => {
 
       <div className="flex flex-col items-center gap-5 mt-6 text-white text-5xl md:text-6xl">
         {/* Webdev Skills */}
-        <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] h-[22dvh] md:h-[32dvh] p-3 rounded-3xl bg-[#121212]">
-          <FaHtml5 />
-          <FaCss3 />
-          <FaJs />
-          <FaReact />
-          <RiTailwindCssFill />
-          <FaNode />
-          <SiExpress />
-          <FaGitAlt />
+        <div className="p-3 rounded-3xl bg-[#121212]">
+          <p className="text-center text-xl md:text-2xl font-medium mt-2">
+            Language / Framework
+          </p>
+          <div className="flex flex-wrap items-center justify-center content-center gap-7 md:gap-y-8 md:gap-x-20 w-[90dvw] h-[24dvh] md:h-[28dvh]">
+            <FaHtml5 />
+            <FaCss3 />
+            <FaJs />
+            <FaReact />
+            <RiTailwindCssFill />
+            <FaNode />
+            <SiExpress />
+            <FaGitAlt />
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-5">
-          {/* Tools */}
-          <div className="flex flex-wrap items-center justify-center content-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[32dvh] p-3 rounded-3xl bg-[#121212]">
-            <VscVscode />
-            <FaGithub />
-            <SiPostman />
-            <SiVercel />
+          <div className="p-3 rounded-3xl bg-[#121212]">
+            <p className="text-center text-xl md:text-2xl font-medium mt-2">
+              Tools
+            </p>
+            <div className="flex flex-wrap items-center justify-center content-center gap-7 md:gap-y-8 md:gap-x-20 w-[90dvw] md:w-[43.25dvw] h-[16dvh] md:h-[24dvh]">
+              <VscVscode />
+              <FaGithub />
+              <SiPostman />
+              <SiVercel />
+            </div>
           </div>
-          {/* Database */}
-          <div className="flex items-center justify-center gap-8 md:gap-20 w-[90dvw] md:w-[44.25dvw] h-[22dvh] md:h-[32dvh] p-3 rounded-3xl bg-[#121212]">
-            <SiPostgresql />
-            <SiMongodb />
+
+          <div className="p-3 rounded-3xl bg-[#121212]">
+            <p className="text-center text-xl md:text-2xl font-medium mt-2">
+              Database
+            </p>
+            <div className="flex items-center justify-center gap-7 md:gap-y-8 md:gap-x-20 w-[90dvw] md:w-[43.25dvw] h-[16dvh] md:h-[24dvh]">
+              <SiPostgresql />
+              <SiMongodb />
+            </div>
           </div>
         </div>
       </div>

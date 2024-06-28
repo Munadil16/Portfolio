@@ -36,15 +36,13 @@ const AboutMe = () => {
 
         <div className="text-white w-5/6 lg:w-1/2 leading-7 sm:tracking-wider">
           <p className="text-[1.1rem] sm:text-[1.2rem] mb-8 indent-16">
-            Hello <span className={highlightClasses}>W</span>
-            orld! I'm <span className={highlightClasses}>Munadil</span> from
-            Madurai, Tamil Nadu, India. I graduated with a B.Sc. in Computer
-            Science. My journey in{" "}
+            Hello World! I'm <span className={highlightClasses}>Munadil</span>{" "}
+            from Madurai, Tamil Nadu, India. I graduated with a B.Sc. in
+            Computer Science. My journey in{" "}
             <span className={highlightClasses}>web development </span>
             began when I was introduced to HTML and CSS during my college years.
-            Since then, I've{" "}
-            <span className={highlightClasses}>fallen in love </span>
-            with it and the endless possibilities it offers.
+            Since then, I've fallen in love with it and the endless
+            possibilities it offers.
           </p>
 
           <p className="text-[1.3rem] mb-4">
