@@ -10,6 +10,7 @@
     <meta name="keywords" content="Munadil, Munadil Portfolio, Munadil Portfolio Website, React Portfolio, Front-end Developer" />
     
     <!-- Open Graph Tags for Facebook, Linkedin -->
+    <meta property="og:site_name" content="Munadil" />
     <meta property="og:title" content="Munadil | Portfolio" />
     <meta property="og:description" content="Welcome to my portfolio, built with ReactJS and TailwindCSS. Explore my projects, and skills in web development." />
     <meta property="og:image" content="https://raw.githubusercontent.com/Munadil16/Portfolio/main/public/portfolio.png" /> 
@@ -40,5 +41,15 @@
   <body class="bg-black">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context" : "https://schema.org",
+          "@type" : "WebSite",
+          "name" : "Munadil",
+          "alternateName": ["Munadil Portfolio"],
+          "url" : "https://munadil.vercel.app/"
+        }
+      </script>
   </body>
 </html>
